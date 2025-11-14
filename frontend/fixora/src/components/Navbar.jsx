@@ -68,7 +68,7 @@ function Navbar() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-linear-to-br from-primary/10 to-base-200 rounded-box z-10 mt-3 w-52 p-2 shadow">
+          <ul tabIndex="-1" className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
             <li onClick={() => navigate("/")}><a>Home</a></li>
             <li onClick={() => navigate("/about")}><a>About</a></li>
             <li>
@@ -110,7 +110,7 @@ function Navbar() {
           <li>
             <details ref={detailsRef}>
               <summary className="cursor-pointer">Services</summary>
-              <ul className="p-2 bg-linear-to-br from-primary/10 to-base-200 shadow-lg rounded-lg absolute z-50">
+              <ul className="p-2 bg-base-100 shadow-lg rounded-lg absolute z-50">
                 <li onClick={() => navigate("/services")}><a>All</a></li>
                 <li onClick={() => navigate(`/services/category/cleaning`)}><a>Cleaning</a></li>
                 <li onClick={() => navigate(`/services/category/plumbing`)}><a>Plumbing</a></li>
