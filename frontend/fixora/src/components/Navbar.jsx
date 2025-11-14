@@ -94,7 +94,7 @@ function Navbar() {
   <img
     src="/Gemini_Generated_Image_gdzs6fgdzs6fgdzs-removebg-preview.png"
     alt="Fixora Logo"
-    className="h-30 sm:h-20 md:h-20 w-auto object-contain"
+    className="h-20 sm:h-25 md:h-30 w-auto object-contain"
   />
 </a>
 
