@@ -8,14 +8,14 @@ const cookieParser = require("cookie-parser");
 const app = express();
 app.use(cors({
   origin: 'http://localhost:5173',
-  credentials: true                
+  credentials: true,
+  methods :['get','post','put','delete','patch']               
 }));
-app.use(cookieParser())
-app.use(cookieParser())
+
+app.use(cookieParser());
 
 app.use('/api/v1/payment/webhook', express.raw({ type: 'application/json' }));
 app.use(express.json());
-app.use(cookieParser());
 
 connectDB();
 
