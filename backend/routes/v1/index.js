@@ -10,6 +10,7 @@ const providerRouter = require('./providerRoutes');
 const serviceRequestRouter = require('./serviceRequestRoutes');
 const messageRouter = require('./messageRoutes');
 const notificationRouter = require('./notificationRoutes');
+const debugRouter = require('./debugRoutes');
 
 const v1Router = require('express').Router();
 
@@ -25,5 +26,6 @@ v1Router.use("/provider", providerRouter);
 v1Router.use("/service-request", serviceRequestRouter);
 v1Router.use("/message", messageRouter);
 v1Router.use("/notification", notificationRouter);
+v1Router.use("/debug", debugRouter);
 
 module.exports = v1Router;
