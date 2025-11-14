@@ -146,14 +146,17 @@ function Navbar() {
                 </button>
 
                 {/* Messages */}
-                <button onClick={() => navigate('/messages')} className="relative">
-                  <FaEnvelope className="text-2xl" />
-                  {unreadCount > 0 && (
-                    <span className="badge badge-xs badge-error absolute -top-1 -right-2">
-                      {unreadCount}
-                    </span>
-                  )}
-                </button>
+                <button 
+  onClick={() => navigate('/messages')} 
+  className="relative text-xl lg:text-2xl"
+>
+  <FaEnvelope />
+  {unreadCount > 0 && (
+    <span className="badge badge-xs badge-error absolute -top-1 -right-2">
+      {unreadCount}
+    </span>
+  )}
+</button>
 
                 {/* User dropdown */}
                 <div className="dropdown dropdown-end">
