@@ -46,9 +46,16 @@ function AdminNavbar() {
             <li onClick={() => navigate('/admin/reviews')}><a>Reviews</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl" onClick={() => navigate('/admin/dashboard')}>
-          FIXORA Admin
-        </a>
+<a
+  className="btn btn-ghost p-0"
+  onClick={() => navigate("/admin/dashboard")}
+>
+  <img
+    src="/Gemini_Generated_Image_gdzs6fgdzs6fgdzs-removebg-preview.png"
+    alt="Fixora Logo"
+    className="h-20 sm:h-25 md:h-30 w-auto object-contain"
+  />
+</a>
       </div>
 
       {/* Navbar Center */}
