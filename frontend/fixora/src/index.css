@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Custom Color Theme  c- Deep Navy Blue & Electric Blue */
+:root,
+[data-theme="light"],
+[data-theme="dark"] {
+  /* Primary: Deep Navy Blue #01257D */
+  --p: 218 98% 25%;
+  /* Secondary: Electric Blue #00FFFF */
+  --s: 180 100% 50%;
+  /* Accent: Electric Blue #00FFFF */
+  --a: 180 100% 50%;
+  
+  /* DaisyUI color variables */
+  --primary: #01257D;
+  --secondary: #00FFFF;
+  --accent: #00FFFF;
+  
+  /* Fallback colors */
+  --fallback-p: #01257D;
+  --fallback-s: #00FFFF;
+  --fallback-a: #00FFFF;
+}
+
+/* Ensure primary and secondary colors are applied */
+.btn-primary {
+  background-color: #01257D !important;
+  border-color: #01257D !important;
+}
+
+.btn-primary:hover {
+  background-color: #011E64 !important;
+  border-color: #011E64 !important;
+}
+
+.btn-secondary {
+  background-color: #00FFFF !important;
+  border-color: #00FFFF !important;
+  color: #000 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #00CCCC !important;
+  border-color: #00CCCC !important;
+}
+
+.text-primary {
+  color: #01257D !important;
+}
+
+.badge-primary {
+  background-color: #01257D !important;
+  border-color: #01257D !important;
+}
+
+.bg-primary {
+  background-color: #01257D !important;
+}
+
+.border-primary {
+  border-color: #01257D !important;
+}
