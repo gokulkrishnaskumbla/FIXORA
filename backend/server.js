@@ -7,10 +7,11 @@ const cookieParser = require("cookie-parser");
 
 const app = express();
 app.use(cors({
-  origin: 'https://fixora-services.onrender.com',
+  origin: ['http://localhost:5173', 'https://fixora-services.onrender.com'],
   credentials: true,
-  methods :['get','post','put','delete','patch']               
+  methods: ['GET','POST','PUT','DELETE','PATCH']
 }));
+
 
 app.use(cookieParser());
 
