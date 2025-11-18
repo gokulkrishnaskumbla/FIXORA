@@ -53,7 +53,7 @@ export default function RegisterPage() {
         ...prev,
         password: passwordPattern.test(value)
           ? ""
-          : "Password must be at least 6 characters",
+          : "Password must be at least 6 characters,include alphabet and numbers",
       }));
     }
 
