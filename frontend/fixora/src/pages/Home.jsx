@@ -113,27 +113,32 @@ export default function Home() {
             </h1>
 
             {/* Search */}
-            <div className="max-w-md mt-6">
-              <p className="text-lg text-base-content/70 mb-3">
-                What are you looking for?
-              </p>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search for services..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                  className="input input-bordered input-lg w-full bg-linear-to-br from-primary/10 to-base-200 text-base-content"
-                />
-                <button
-                  onClick={handleSearch}
-                  className="absolute right-2 top-2 btn btn-primary btn-sm"
-                >
-                  Search
-                </button>
-              </div>
-            </div>
+{/* Search Bar */}
+<div className="max-w-md mt-6">
+  <p className="text-lg text-base-content/70 mb-3">
+    What are you looking for?
+  </p>
+
+  <div className="relative w-full">
+    <input
+      type="text"
+      placeholder="Search for services..."
+      value={searchQuery}
+      onChange={(e) => setSearchQuery(e.target.value)}
+      onKeyDown={(e) => e.key === "Enter" && handleSearch()}
+      className="input input-bordered input-lg w-full bg-linear-to-br from-primary/10 to-base-200 text-base-content pr-20"
+    />
+
+    {/* Search button FIXED to right — NO DISAPPEAR */}
+    <button
+      onClick={handleSearch}
+      className="btn btn-primary btn-sm absolute top-1/2 right-2 -translate-y-1/2"
+    >
+      Search
+    </button>
+  </div>
+</div>
+
 
             {/* Quick Category Buttons */}
             <div className="flex flex-wrap gap-3 mt-6">
